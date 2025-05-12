@@ -8,5 +8,5 @@ env:
 
 jobs:
   print-env-vars:
-    uses: ./reusable.yml
+    uses: ./reusable.yml@main
 
