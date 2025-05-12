@@ -6,6 +6,10 @@ on:
       FOO:
         required: true
         type: string
+      BAR:
+        required: false
+        type: string
+        default: null
 
 jobs:
   print-env-vars:
@@ -13,8 +17,8 @@ jobs:
     steps:
     - name: "print envs vars"
       env:
-        FOO:  ${{ inputs.FOO }}
-        BAR: null
+        FOO: ${{ inputs.FOO }}
+        BAR: ${{ inputs.BAR }}
       run:
         env
 
