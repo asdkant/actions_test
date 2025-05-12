@@ -3,10 +3,10 @@ name: main
 on: push
 
 env:
-  FOO: foo
   BAR: bar
 
 jobs:
   print-env-vars:
     uses: asdkant/actions_test/.github/workflows/reusable.yml@main
-
+    with:
+      FOO: foo

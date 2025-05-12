@@ -3,16 +3,18 @@ name: reusable
 on:
   workflow_call: 
     inputs:
-      env:
-        required: false
+      FOO:
+        required: true
         type: string
-        default: ""
+        
 
 jobs:
   print-env-vars:
     runs-on: ubuntu-latest
     steps:
     - name: "print envs vars"
+      env:
+        FOO:  ${{ inputs.FOO }}
       run:
         env
 
