@@ -1,9 +1,5 @@
 name: main
-
 on: push
-
-env:
-  BAR: bar
 
 jobs:
   print-env-vars:
