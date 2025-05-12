@@ -1,0 +1,12 @@
+name: main
+
+on: push
+
+env:
+  FOO: foo
+  BAR: bar
+
+jobs:
+  print-env-vars:
+    uses: ./reusable.yml
+
