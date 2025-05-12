@@ -8,5 +8,5 @@ env:
 
 jobs:
   print-env-vars:
-    uses: ./reusable.yml@main
+    uses: asdkant/actions_test/.github/workflows/reusable.yml@main
 
